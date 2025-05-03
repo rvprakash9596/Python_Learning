@@ -12,7 +12,6 @@ if species == "dog":
         food = "Adult Dog Food"
     else:
         food = "Senior Dog Food"
-
 elif species == "cat":
     if age < 2:
         food = "Kitten Food"
@@ -20,10 +19,6 @@ elif species == "cat":
         food = "Adult Cat Food"
     else:
         food = "Senior Cat Food"
-
 else:
     food = "Species not recognized. Please enter 'Dog' or 'Cat'."
-
-# Output
 print("Recommended Food:", food)
-
