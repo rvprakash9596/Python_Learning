@@ -11,5 +11,6 @@ func() # Mango12
 x=98
 def func3():
      global x
-     x=88
+    #  x=88
+func3()
 print(x)
