@@ -3,6 +3,8 @@
 
 class Car:
     def __init__(self,brand,model):
+        # brand = None
+        # model = None
         self.brand = brand
         self.model = model
 
