@@ -4,14 +4,14 @@
 
 class Car:
     def __init__(self, brand, model):
-        self.brand = brand
+        self.__brand = brand
         self.model = model
 
     def get_brand(self):
-        return self.brand + "!"
+        return self.__brand + "!"
 
     def full_name(self):
-        return f"{self.brand} {self.model}"
+        return f"{self.__brand} {self.model}"
 
 class ElectricCar(Car):
     def __init__(self, brand, model, battery_size):
@@ -20,5 +20,5 @@ class ElectricCar(Car):
 
 # Example usage
 my_tesla = ElectricCar("Tesla", "Model S", "95kwh")
-print(my_tesla.brand)
+# print(my_tesla.__brand)
 print(my_tesla.get_brand())
