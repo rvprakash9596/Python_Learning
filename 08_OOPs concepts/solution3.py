@@ -9,7 +9,7 @@ class Car:
         self.year = year
 
     def display_info(self):
-        print(f"Car: {self.year} {self.make} {self.model}")
+        print(f"Car: {self.make} {self.model} {self.year}")
 
 # Derived class
 class ElectricCar(Car):
@@ -23,4 +23,6 @@ class ElectricCar(Car):
 
 # Example usage
 my_tesla = ElectricCar("Tesla", "Model S", 2024, 100)
+my_suzuki = ElectricCar("Dzire", "VXI", 2024, 120)
 my_tesla.display_info()
+my_suzuki.display_info()
